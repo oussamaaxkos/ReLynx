@@ -1,1 +1,1 @@
-# TODO: Update README.md for MultiNLI Dataset Mention\n\n- [ ] Step 1: Edit README.md Training section to explicitly state the model was trained on MultiNLI.\n- [ ] Step 2: Mark complete and attempt_completion.\n
+
