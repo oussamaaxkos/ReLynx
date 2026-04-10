@@ -9,7 +9,7 @@ Unlike traditional embedding similarity approaches, ReLynx learns to classify re
 
 ---
 
-## 🚀 Key Idea
+## Key Idea
 
 Instead of comparing embeddings using cosine similarity, ReLynx leverages the BERT encoder to **learn relational semantics directly**.
 
@@ -22,13 +22,13 @@ The `[CLS]` token acts as a **relation representation vector** (similar to a cus
 
 ---
 
-## 🧠 Model
+## Model
 
 - Base model: `bert-base-uncased` (default)
 - Task: Sentence-pair classification
 - Head: Linear classification layer on top of `[CLS]`
 
-### 🔄 Supported pretrained variants
+### Supported pretrained variants
 You can easily swap the base model:
 
 - `bert-base-uncased` — solid baseline  
@@ -39,7 +39,7 @@ You can easily swap the base model:
 
 ---
 
-## 📊 Training Data
+## Training Data
 
 ReLynx can be trained on Natural Language Inference datasets:
 
@@ -67,7 +67,7 @@ limited[SEP]Water is wet.[SEP]Fire is hot.
 
 ---
 
-## ⚙️ Training
+## Training
 
 Built using Hugging Face Transformers:
 
@@ -79,7 +79,7 @@ Built using Hugging Face Transformers:
 
 ---
 
-## 🔍 Inference
+## Inference
 
 ```python
 from transformers import pipeline
@@ -92,7 +92,7 @@ print(result)  # [{'label': 'opposite', 'score': 0.98}]
 
 ---
 
-## 📈 Applications
+## Applications
 - Duplicate detection
 - Fact checking & contradiction detection
 - Chatbot consistency validation
@@ -102,7 +102,7 @@ print(result)  # [{'label': 'opposite', 'score': 0.98}]
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 - Works at sentence level (not full documents)
 - No explanation of predictions (classification only)
 - Domain adaptation required for specialized fields
@@ -110,7 +110,7 @@ print(result)  # [{'label': 'opposite', 'score': 0.98}]
 
 ---
 
-## 💡 Future Work
+## Future Work
 - Add more fine-grained relation types
 - Train on domain-specific corpora (medical, legal, etc.)
 - Add explainability (attention visualization, rationale extraction)
@@ -118,6 +118,6 @@ print(result)  # [{'label': 'opposite', 'score': 0.98}]
 
 ---
 
-## 📌 Summary
+## Summary
 
 ReLynx turns BERT into a relation-aware encoder, enabling deeper semantic understanding beyond similarity scoring.
