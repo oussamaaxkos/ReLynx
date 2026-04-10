@@ -31,6 +31,8 @@ No custom architecture, just a different way of using the encoder.
 
 ## Training
 
+Our model was trained on the **MultiNLI** dataset.
+
 The model can be trained directly on NLI datasets like SNLI or MultiNLI by remapping labels:
 
 - entailment → **same**  
@@ -41,7 +43,7 @@ You can also plug in your own data as long as it follows a simple format:
 label[SEP]sentence1[SEP]sentence2
 
 
-In practice, starting from MultiNLI and then fine-tuning on a smaller custom dataset works well.
+In practice, starting from **our MultiNLI-trained model** and then fine-tuning on a smaller custom dataset works well.
 
 ---
 
