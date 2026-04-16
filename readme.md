@@ -2,7 +2,7 @@
 
 ReLynx is a small experiment around a simple idea: instead of measuring similarity between two sentences, why not train BERT to understand the *relationship* between them?
 
-The model is fine-tuned to take a pair of sentences and predict how they relate — whether they mean the same thing, contradict each other, or are just loosely related.
+The model is fine-tuned to take a pair of sentences and predict how they relate whether they mean the same thing, contradict each other, or are just loosely related.
 
 ---
 
